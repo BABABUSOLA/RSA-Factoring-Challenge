@@ -19,11 +19,11 @@ if len(argv) != 2:
 
 try:
     with open(argv[1]) as file:
-        line = file.readline()
+        read_line = file.readline()
 
-        while line != "":
-            number_to_check = int(line.split('\n')[0])
+        while read_line != "":
+            number_to_check = int(read_line.split('\n')[0])
             factorize(number_to_check)
-            line = file.readline()
+            read_line = file.readline()
 except:
     pass
